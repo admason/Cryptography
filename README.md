@@ -37,13 +37,27 @@ The code only needs the month = 1 to produce an enciphered text by shifting each
 Returns
 
 
-Whereby ‘a’  shift forward by one  ‘b’
-Whereby ‘b’  shift forward by one  ‘c’
+Whereby ‘a’ will shift the ASCII value forward by one position to ‘b’
+Whereby ‘b’will shift the ASCII value forward by one position to ‘c’
 
 
-Whereby ‘b’  shift back by one ‘a’
-Whereby ‘c’  shift by one  ‘b’
+Whereby ‘b’ will shift the ASCII value backward by one position to ‘a’
+Whereby ‘c’ will shift the ASCII value backward by one position to ‘b’
 
 The deciphered offers a means of checking the ciphertext will return to the original plaintext.
 
-This may be furthermore checked by allowing the test
+
+TESTING:
+This may be furthermore checked by directing the plaintext to read from the message.txt file,
+by using the code 
+# src = open('C:/Users/.../message.txt','r')     (Replacing \ for /)
+# plaintext = src.read()
+
+The deciphered text should be the inverse of the plain text and the python code returns. 
+	 deciphered: 
+	 0123456789
+Uppercase alphabet
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Lowercse alphabet
+abcdefghijklmnopqrstuvwxyz
+

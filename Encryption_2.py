@@ -1,13 +1,11 @@
 from datetime import date
 
-
 day, mon, year = int(input("Enter day: ")),int(input("Enter month: ")),int(input("Enter year: ")) 
 bday = date(year, mon, day)                               
 shift =  bday.month                                
 plaintext  = input("Enter plaintext message: ")                                                    
                                                     
 class Cipher:                                                           # Create the class Cipher:
-
     def __init__(self):                                                 # initiate the class
         def caesar_cipher(self,x):                                      # define the caesar_cipher function
             self.x = x
@@ -44,16 +42,11 @@ class Cipher:                                                           # Create
                     decipher +=chr((ord(char) - shift - 65) %26 +97)
                 else:
                     decipher += chr((ord(char) - shift - 97)%26 + 97)
-                   
-                    
-
-            return decipher
-
-            
+            return decipher            
         deciph = list(map(lambda ciph: caesar_decipher(self, ciph), ciphertext))
         deciphertext = ''
         for k in deciph:
             deciphertext += str(k)
         print('deciphered: ', deciphertext)
 
-Cipher()            
+Cipher()                    # Execute Class
